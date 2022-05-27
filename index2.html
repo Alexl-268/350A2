@@ -23,6 +23,15 @@
             margin: 0;
         }
 
+        h2 {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+            color: white;
+            margin: 0;
+            padding: 10px;
+        }
+
         p {
             font-family: 'Noto Sans', sans-serif;
             padding-left: 30px;
@@ -51,7 +60,7 @@
                     <button><em class="fa fa-search"></em></button>
                 </form>
             </div>
-            <a class="signup">Log in</a>
+            <a  id="trigger-modal" class="signup custom-green" onclick="openModal()">Sign Up</a>
         </div>
     </div>
 
@@ -65,7 +74,7 @@
             <p>
                 To estimate ...
             </p>
-            <button class="w3-btn w3-green" id="myBtn">
+            <button id="trigger-modal" class="w3-btn custom-green" onclick="openModal()">
                 try now
             </button>
         </span>
@@ -134,44 +143,52 @@
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <div class="modal-title">
+                <h2>
+                    Please Enter your deails
+                    <span onclick="closeModal()" style="float: right;">x</span>
+                </h2>               
+            </div>           
             <form>
-                <label for="fname">Given name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
-                <label for="lname">Surname:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br>
-                <label for="lname">Username:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br>
-                <label for="fname">Password:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br><br>
-                <label for="lname">Home Address:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br>
-                <label for="fname">Work Address:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br><br>
-                <label for="lname">Mobile Number:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br>
-                <label for="lname">Email:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
-                <input type="submit" value="Submit">
-              </form> 
+                <br>
+                <div id="userDetails">
+                    <label>Given name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label>Surname:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label>Username:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="fname">Password:</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label>Home Address:</label><br>
+                </div>
+
+                <div id="address">
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="fname">Work Address:</label><br>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label>Mobile Number:</label><br>
+                </div>
+                <div id="contacts">
+                    <input type="text" id="lname" name="lname"><br>
+                    <label>Email:</label><br>
+                    <input type="text" id="lname" name="lname"><br><br>
+                </div>
+            </form>
+
+
+            <button class="w3-btn custom-green" onclick="closeModal()">Submit</button>
         </div>
     </div>
 
 
     <script>
         var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-        span.onclick = function () {
+        function closeModal() {
             modal.style.display = "none";
         }
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
+        function openModal() {
+            modal.style.display = "block";
         }
     </script>
 

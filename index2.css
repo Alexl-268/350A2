@@ -10,7 +10,6 @@ body {
 }
 
 .top-nav-bar a.signup {
-    background-color: #15961E;
     width: 250px;
 }
 
@@ -63,7 +62,7 @@ body {
     position: absolute;
     right: 250px;
     border-radius: 25px;
-    border: 2px solid #73AD21;
+    border: 2px solid #15961E;
     padding: 20px;
     width: 500px;
     height: 350px;
@@ -134,7 +133,26 @@ body {
   .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
+  }
+
+  .modal-content div{
+      text-align: center;
+  }
+
+  .modal-content .modal-title {
+    background-color: #963359;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .modal-content button {
+    position:relative;
+    width: 100%;
+  }
+
+  .custom-green {
+      background-color: #157E22 !important;
+      color: white !important;
   }
