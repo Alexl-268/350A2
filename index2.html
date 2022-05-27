@@ -6,66 +6,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,900;1,600;1,800&display=swap"
+        rel="stylesheet">
     <style>
         h1 {
             font-family: 'Noto Sans', sans-serif;
             padding-left: 30px;
-            font-size: 20px;
-            font-weight: 600;
+            font-size: 25px;
+            font-weight: 900;
             font-style: italic;
-            text-decoration: underline;
             color: #4A192C;
+            margin: 0;
+        }
+
+        p {
+            font-family: 'Noto Sans', sans-serif;
+            padding-left: 30px;
+            font-size: medium;
+        }
+
+        button {
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
+    <!------------------------------------------------ The Top Nav bar ------------------------------------------------>
     <div class="top-nav-bar">
-        <span>
-            <a style="font-size: 24px; font-weight: 600;">Carbon TopToe Logo</a>
-            <a>About Us</a>
+        <div>
+            <a style="font-size: 24px; font-weight: 600;">Insert Logo Here</a>
+            <a>About us</a>
             <a>What we do</a>
             <a>The Team</a>
-        </span>
-        <span>
-            <a>Language</a>
-            <a class="join">Join us</a>
-        </span>
+        </div>
+        <div>
+            <div class="search-container">
+                <form>
+                    <input type="text" placeholder="Search..">
+                    <button><em class="fa fa-search"></em></button>
+                </form>
+            </div>
+            <a class="signup">Log in</a>
+        </div>
     </div>
 
+    <!------------------------------------------------ The Main Section ------------------------------------------------>
     <div class="main-section">
-        <img src="tui2.png" class="tui-image" alt="tui iamge"></img>
-        <span class="trial">
+        <img src="tui2.png" class="tui-image" alt="tuem iamge"></emmg>
+        <span class="trial-box">
             <h1>
                 Try Our calculator
             </h1>
+            <p>
+                To estimate ...
+            </p>
+            <button class="w3-btn w3-green" id="myBtn">
+                try now
+            </button>
         </span>
     </div>
 
+    <!------------------------------------------------ The Lower Section ------------------------------------------------>
     <div class="lower-section">
-        <span class="card header-text" style="margin-left: 100px; margin-right: 100px; width: 700px;">
+        <span class="card header-text" style="margin-left: 100px; margin-right: 100px; width: 700px;" onclick="">
             <h1>
-                Who we are
+                Who we are >
             </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
+                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique. Aliquam finibus ex vitae dui
+                facilisis, eu vestibulum dolor consequat. Nam ut ex vitae urna ultrices congue sit amet at nulla. Donec
+                nisi enim, volutpat vulputate luctus eu, semper quis quam. Nulla facilisi. Curabitur cursus erat vel
+                felis hendrerit ullamcorper. Nam sed pretium nisl.
+            </p>
         </span>
         <span class="card" style="width: 350px;">
             <h1>
-                The Land
+                The Land >
             </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
+                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique.
+                facilisis.
+            </p>
         </span>
         <span class="card" style="margin-right: 100px; width: 350px;">
             <h1>
-                The Ocean
+                The Ocean >
             </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
+                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique.
+                facilisis.
+            </p>
         </span>
     </div>
 
-    <div class="bottom-nav-bar">
+    <!------------------------------------------------ The Footer ------------------------------------------------>
+    <footer class="bottom-nav-bar">
+        <div>
+            <a>
+                Contact us
+            </a>
+            <a>
+                FAQ
+            </a>
+        </div>
+        <div class="social-media">
+            <em class="fa fa-facebook-official w3-hover-opacity"></em>
+            <em class="fa fa-instagram w3-hover-opacity"></em>
+            <em class="fa fa-snapchat w3-hover-opacity"></em>
+            <em class="fa fa-twitter w3-hover-opacity"></em>
+            <em class="fa fa-linkedin w3-hover-opacity"></em>
+        </div>
         <a>
-            yo
+            CopyRight
         </a>
+    </footer>
+
+
+    <!------------------------------------------------ The Modal ------------------------------------------------>
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form>
+                <label for="fname">Given name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Surname:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="lname">Username:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="fname">Password:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Home Address:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="fname">Work Address:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br><br>
+                <label for="lname">Mobile Number:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="lname">Email:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
     </div>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>

@@ -1273,7 +1273,8 @@ a {
 
 .w3-opacity,
 .w3-hover-opacity:hover {
-    opacity: 0.60
+    opacity: 0.60;
+    cursor: pointer;
 }
 
 .w3-opacity-off,
