@@ -9,8 +9,12 @@ body {
     background-color: #963359;
 }
 
-.top-nav-bar a.signup {
+.top-nav-bar .signup-button {
     width: 250px;
+}
+
+.top-nav-bar .signup-button:hover {
+    background-color: #194A1C !important;
 }
 
 .top-nav-bar a {
@@ -42,7 +46,14 @@ body {
 }
 
 .main-section .signup-button {
-    float: left;
+    font-family: 'Noto Sans', sans-serif;
+    border-radius: 5px;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px 20px;
+    right: 0px;
+    bottom: 0px;
 }
 
 .main-section {
@@ -119,40 +130,58 @@ body {
     display: none;
     position: fixed;
     z-index: 1;
-    padding: 150px 500px; 
+    padding: 150px 500px;
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-  }
-  
-  /* Modal Content */
-  .modal-content {
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
     background-color: #fefefe;
     margin: auto;
     border: 1px solid #888;
     width: 50%;
-  }
+}
 
-  .modal-content div{
-      text-align: center;
-  }
+.modal-content .close-button {
+    width: 30px;
+    border-radius: 20px;
+    border-width: 1px;
+    position: relative;
+    border-color: white;
+    background-color: red;
+    color: white;
+    float: right;
+    top: -15px;
+    right: -15px;
+}
 
-  .modal-content .modal-title {
+.modal-content .close-button :hover{
+    float: left;
+    background-color: #d4b8c3;
+}
+
+.modal-content div {
+    text-align: center;
+}
+
+.modal-content .modal-title {
     background-color: #963359;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
 
-  .modal-content button {
-    position:relative;
+.modal-content button {
+    position: relative;
     width: 100%;
-  }
+}
 
-  .custom-green {
-      background-color: #157E22 !important;
-      color: white !important;
-  }
+.custom-green {
+    background-color: #157E22 !important;
+    color: white !important;
+}

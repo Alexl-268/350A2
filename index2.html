@@ -60,13 +60,13 @@
                     <button><em class="fa fa-search"></em></button>
                 </form>
             </div>
-            <a  id="trigger-modal" class="signup custom-green" onclick="openModal()">Sign Up</a>
+            <a  id="trigger-modal" class="signup-button custom-green" onclick="openModal()">Sign Up</a>
         </div>
     </div>
 
     <!------------------------------------------------ The Main Section ------------------------------------------------>
     <div class="main-section">
-        <img src="tui2.png" class="tui-image" alt="tuem iamge"></emmg>
+        <img src="tui2.png" class="tui-image" alt="tui iamge"></emmg>
         <span class="trial-box">
             <h1>
                 Try Our calculator
@@ -74,15 +74,15 @@
             <p>
                 To estimate ...
             </p>
-            <button id="trigger-modal" class="w3-btn custom-green" onclick="openModal()">
-                try now
+            <button id="trigger-modal" class="w3-btn custom-green signup-button" onclick="openModal()">
+                Try now  &nbsp&nbsp>
             </button>
         </span>
     </div>
 
     <!------------------------------------------------ The Lower Section ------------------------------------------------>
     <div class="lower-section">
-        <span class="card header-text" style="margin-left: 100px; margin-right: 100px; width: 700px;" onclick="">
+        <span class="card" style="margin-left: 100px; margin-right: 100px; width: 700px;" onclick="">
             <h1>
                 Who we are >
             </h1>
@@ -143,11 +143,11 @@
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
+            <button onclick="closeModal()" class="close-button">x</button>  
             <div class="modal-title">
                 <h2>
                     Please Enter your deails
-                    <span onclick="closeModal()" style="float: right;">x</span>
-                </h2>               
+                </h2>
             </div>           
             <form>
                 <br>
