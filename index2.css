@@ -81,17 +81,21 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
     padding: 20px 30px 20px 20px;
     margin-top: 40px;
     height: 250px;
     overflow: hidden;
     cursor: pointer;
+    background-color: white;
 }
 
 .lower-section {
     display: flex;
     justify-content: space-between;
+}
+
+.lower-section :hover{
+    background-color: #f5f5f5;
 }
 
 .bottom-nav-bar {
@@ -150,20 +154,22 @@ body {
 
 .modal-content .close-button {
     width: 30px;
+    transform: rotate(45deg);
+    height: 30px;
+    font-weight: bold;
     border-radius: 20px;
     border-width: 1px;
     position: relative;
     border-color: white;
-    background-color: red;
+    background-color: #ff4336;
     color: white;
     float: right;
     top: -15px;
     right: -15px;
 }
 
-.modal-content .close-button :hover{
-    float: left;
-    background-color: #d4b8c3;
+.close-button:hover {
+    background-color: #bf261b;
 }
 
 .modal-content div {
