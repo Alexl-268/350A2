@@ -153,15 +153,16 @@ body {
 }
 
 .modal-content .close-button {
-    width: 30px;
+    width: 35px;
     transform: rotate(45deg);
-    height: 30px;
-    font-weight: bold;
+    height: 35px;
+    font-weight: bolder;
+    font-size: large;
     border-radius: 20px;
     border-width: 1px;
     position: relative;
     border-color: white;
-    background-color: #ff4336;
+    background-color: #DB0F00;
     color: white;
     float: right;
     top: -15px;
@@ -169,7 +170,7 @@ body {
 }
 
 .close-button:hover {
-    background-color: #bf261b;
+    background-color: #800900;
 }
 
 .modal-content div {
