@@ -97,13 +97,17 @@ body {
     background-color: white;
 }
 
+.card :hover {
+    background-color: gold;
+}
+
 .lower-section {
     display: flex;
     justify-content: space-between;
 }
 
 .lower-section :hover{
-    background-color: white;
+    background-color: rgb(236, 236, 236);
 }
 
 .bottom-nav-bar {
