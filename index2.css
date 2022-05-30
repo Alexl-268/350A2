@@ -13,11 +13,16 @@ body {
     width: 250px;
 }
 
+.top-nav-bar ul {
+    padding: 0;
+    margin: 0;
+}
+
 .top-nav-bar .signup-button:hover {
     background-color: #194A1C !important;
 }
 
-.top-nav-bar a {
+.top-nav-bar ol {
     cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
     line-height: 60px;
@@ -29,7 +34,7 @@ body {
     background-color: #963359;
 }
 
-.top-nav-bar a:hover {
+.top-nav-bar ol:hover {
     background-color: #4A192C;
     color: white;
 }

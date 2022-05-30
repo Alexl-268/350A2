@@ -46,23 +46,23 @@
 
 <body>
     <!------------------------------------------------ The Top Nav bar ------------------------------------------------>
-    <div class="top-nav-bar">
-        <div>
-            <a style="font-size: 24px; font-weight: 600;">Insert Logo Here</a>
-            <a>About us</a>
-            <a>What we do</a>
-            <a>The Team</a>
-        </div>
-        <div>
+    <nav class="top-nav-bar">
+        <ul>
+            <ol href="#home"><a style="font-size: 24px; font-weight: 600;">Insert Logo Here</a></ol>
+            <ol href="#About">About us</ol>
+            <ol href="#Mission">What we do</ol>
+            <ol href="#Team">The Team</ol>
+        </ul>
+        <ul>
             <div class="search-container">
                 <form>
                     <input type="text" placeholder="Search..">
                     <button><em class="fa fa-search"></em></button>
                 </form>
             </div>
-            <a id="trigger-modal" class="signup-button custom-green" onclick="openModal()">Sign Up</a>
-        </div>
-    </div>
+            <ol id="trigger-modal" class="signup-button custom-green" onclick="openModal()">Sign Up</a>
+        </ul>
+    </nav>
 
     <!------------------------------------------------ The Main Section ------------------------------------------------>
     <div class="main-section">
