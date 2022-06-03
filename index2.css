@@ -2,14 +2,14 @@ body {
     margin: 0;
 }
 
+/*-----------------------------------Top Navigation-----------------------------------*/
 .top-nav-bar {
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    background-color: #963359;
 }
 
-.top-nav-bar .signup-button {
+.top-nav-bar .login-button {
     width: 250px;
 }
 
@@ -18,24 +18,18 @@ body {
     margin: 0;
 }
 
-.top-nav-bar .signup-button:hover {
-    background-color: #194A1C !important;
-}
-
 .top-nav-bar ol {
     cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
     line-height: 60px;
     text-align: center;
     float: left;
-    color: #f2f2f2;
     padding: 18px 48px;
     font-size: 25px;
-    background-color: #963359;
 }
 
 .top-nav-bar ol:hover {
-    background-color: #4A192C;
+    background-color: #963359;
     color: white;
 }
 
@@ -50,6 +44,7 @@ body {
     float: right;
 }
 
+/*-----------------------------------Main Section-----------------------------------*/
 .main-section .signup-button {
     font-family: 'Noto Sans', sans-serif;
     border-radius: 5px;
@@ -93,6 +88,14 @@ body {
     text-align: center;
     width: 300px;
 }
+
+
+/*-----------------------------------Lower Section-----------------------------------*/
+.lower-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
     padding: 20px 30px 20px 20px;
@@ -103,24 +106,19 @@ body {
     background-color: white;
 }
 
-.lower-section {
-    display: flex;
-    justify-content: space-between;
-}
-
 .lower-section :hover{
     background-color: rgb(236, 236, 236);
 }
 
+
+/*-----------------------------------Bottom Navigation-----------------------------------*/
 .bottom-nav-bar {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    background-color: #963359;
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: white;
     font-size: 24px;
 }
 
@@ -133,17 +131,17 @@ body {
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
     float: left;
-    color: white;
     padding: 8px 48px;
     font-size: 20px;
-    background-color: #963359;
 }
 
 .bottom-nav-bar a:hover {
-    background-color: #4A192C;
+    background-color: #963359;
     color: white;
 }
 
+
+/*-----------------------------------Modal-----------------------------------*/
 .modal {
     display: none;
     position: fixed;
@@ -191,7 +189,6 @@ body {
 }
 
 .modal-content .modal-title {
-    background-color: #963359;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -201,7 +198,24 @@ body {
     width: 100%;
 }
 
-.custom-green {
+
+/*-----------------------------------Custom Colors-----------------------------------*/
+.custom-light-green {
     background-color: #157E22 !important;
+    color: white !important;
+}
+
+.custom-dark-green {
+    background-color: #194A1C !important;
+    color: white !important;
+}
+
+.custom-light-red {
+    background-color: #963359 !important;
+    color: white !important;
+}
+
+.assigned-color {
+    background-color: #4A192C !important;
     color: white !important;
 }

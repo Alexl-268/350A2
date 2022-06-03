@@ -5,9 +5,9 @@
     <title>Alex Liang</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/507266f41e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index2.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,900;1,600;1,800&display=swap"
@@ -46,9 +46,9 @@
 
 <body>
     <!------------------------------------------------ The Top Nav bar ------------------------------------------------>
-    <nav class="top-nav-bar">
+    <nav class="top-nav-bar assigned-color">
         <ul>
-            <ol href="#home"><a style="font-size: 24px; font-weight: 600;">Insert Logo Here</a></ol>
+            <ol><i class="fa-solid fa-leaf" href="#Home"></i> Carbon TipToe</ol>
             <ol href="#About">About us</ol>
             <ol href="#Mission">What we do</ol>
             <ol href="#Team">The Team</ol>
@@ -60,7 +60,7 @@
                     <button><em class="fa fa-search"></em></button>
                 </form>
             </div>
-            <ol id="trigger-modal" class="signup-button custom-green" onclick="openModal()">Sign Up</a>
+            <ol id="trigger-modal" class="login-button ">My Account</a>
         </ul>
     </nav>
 
@@ -75,9 +75,10 @@
                 Carbon Calculator
             </h1>
             <p style="font-size: 20px;">
-                Courious about your carbon foorptin? Sign up with us to try out our carbon calculator. It estimate your carbon footprint and compare against the nation average. It only takes 5 minutes!
+                Courious about your carbon foorptin? Sign up with us to try out our carbon calculator. It estimate your
+                carbon footprint and compare against the nation average, and only takes 5 minutes!
             </p>
-            <button id="trigger-modal" class="w3-btn custom-green signup-button" onclick="openModal()">
+            <button id="trigger-modal" class="w3-btn custom-light-green signup-button" onclick="openModal()">
                 Try now &nbsp>
             </button>
         </span>
@@ -120,7 +121,7 @@
     </div>
 
     <!------------------------------------------------ The Footer ------------------------------------------------>
-    <footer class="bottom-nav-bar">
+    <footer class="bottom-nav-bar assigned-color">
         <div>
             <a>
                 Contact us
@@ -147,7 +148,7 @@
         <!-- Modal content -->
         <div class="modal-content">
             <button onclick="closeModal()" class="close-button">+</button>
-            <div class="modal-title">
+            <div class="modal-title assigned-color">
                 <h2>
                     Please Enter your deails
                 </h2>
@@ -156,31 +157,31 @@
                 <br>
                 <div id="userDetails">
                     <label>Given name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
+                    <input type="text" id="fName"><br>
                     <label>Surname:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
+                    <input type="text" id="lName"><br>
                     <label>Username:</label><br>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="fname">Password:</label><br>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label>Home Address:</label><br>
+                    <input type="text" id="uName"><br>
+                    <label>Password:</label><br>
+                    <input type="text" id="password"><br><br>
                 </div>
 
                 <div id="address">
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="fname">Work Address:</label><br>
-                    <input type="text" id="fname" name="fname"><br><br>
-                    <label>Mobile Number:</label><br>
+                    <label>Home Address:</label><br>
+                    <input type="text" id="hAddress"><br>
+                    <label>Work Address:</label><br>
+                    <input type="text" id="wAddress"><br><br>
                 </div>
                 <div id="contacts">
-                    <input type="text" id="lname" name="lname"><br>
+                    <label>Mobile Number:</label><br>
+                    <input type="tel" id="phone"><br>
                     <label>Email:</label><br>
-                    <input type="text" id="lname" name="lname"><br><br>
+                    <input type="text" id="email"><br><br>
                 </div>
             </form>
 
 
-            <button class="w3-btn custom-green w3-padding-large" onclick="closeModal()">Submit</button>
+            <button class="w3-btn custom-light-green w3-padding-large" onclick="closeModal()">Submit</button>
         </div>
     </div>
 
