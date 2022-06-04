@@ -144,6 +144,12 @@ body {
     padding: 8px 24px;
 }
 
+.bottom-nav-bar .copyright{
+    padding: 15px;
+    margin: 0;
+    font-size: 12px;
+}
+
 .bottom-nav-bar a {
     font-family: 'Noto Sans', sans-serif;
     text-align: center;
