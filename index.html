@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,900;1,600;1,800&display=swap"
         rel="stylesheet">
     <style>
+        /* Style for Fonts See more styling in index.css */
         h1 {
             font-family: 'Noto Sans', sans-serif;
             padding-left: 30px;
@@ -64,21 +65,21 @@
     </nav>
 
     <!------------------------------------------------ The Main Section ------------------------------------------------>
-    <div class="main-section">
+    <div class="main-section custom-background-color">
         <img src="bg2.png" alt="background with clouds">
         <div class="tui-speaks">
             Are those clouds or are they greenhouse gasses?
         </div>
         <span class="trial-box">
-            <h1 style="font-size: 30px;">
+            <h1>
                 Carbon Calculator
             </h1>
-            <p style="font-size: 20px;">
+            <p>
                 Courious about your carbon footprint and how it impacts our enviroment? Sign up with us to try out our
                 carbon calculator. It estimate your
-                carbon footprint and compare against the nation average, and only takes 5 minutes!
+                carbon footprint and compare against the nation average, and only takes three minutes!
             </p>
-            <button id="trigger-modal" class="w3-btn custom-light-green signup-button" onclick="openModal()">
+            <button id="trigger-modal" class="w3-btn custom-color signup-button" onclick="openModal()">
                 Try now &nbsp>
             </button>
         </span>
@@ -86,7 +87,7 @@
 
     <!------------------------------------------------ The Lower Section ------------------------------------------------>
     <div class="lower-section">
-        <div class="card clickable" style="margin-left: 100px; margin-right: 100px; width: 700px;">
+        <div class="card clickable large">
             <h1>
                 Our Mission >
             </h1>
@@ -97,7 +98,7 @@
                 environment, and suggest tools to help offset your footprint!
             </p>
         </div>
-        <div class="card clickable" style="width: 350px;">
+        <div class="card clickable small">
             <h1>
                 The Land >
             </h1>
@@ -106,13 +107,13 @@
                 droughts? Click here to learn more.
             </p>
         </div>
-        <div class="card clickable" style="margin-right: 100px; width: 350px;">
+        <div class="card clickable small">
             <h1>
                 The Ocean >
             </h1>
             <p>
                 How is our ocean doing? Click here to learn more about the dying coral reefs and hurricanes caused by
-                imbalanced sea temperatures.
+                the imbalance in sea temperatures.
             </p>
         </div>
     </div>
@@ -164,7 +165,7 @@
                         <input type="text" id="password"><br><br>
                     </div>
 
-                    <div id="address">
+                    <div id="addresses">
                         <label>Home Address:</label><br>
                         <input type="text" id="hAddress"><br>
                         <label>Work Address:</label><br>
@@ -181,7 +182,7 @@
 
 
 
-            <button class="w3-btn custom-light-green w3-padding-large" onclick="closeModal()">Submit</button>
+            <button class="w3-btn custom-color w3-padding-large" onclick="closeModal()">Submit</button>
         </div>
     </div>
 
