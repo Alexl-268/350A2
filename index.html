@@ -34,8 +34,7 @@
 
         p {
             font-family: 'Noto Sans', sans-serif;
-            padding-left: 30px;
-            font-size: medium;
+            padding: 0 30px;
         }
 
         button {
@@ -75,7 +74,8 @@
                 Carbon Calculator
             </h1>
             <p style="font-size: 20px;">
-                Courious about your carbon foorptin? Sign up with us to try out our carbon calculator. It estimate your
+                Courious about your carbon footprint and how it impacts our enviroment? Sign up with us to try out our
+                carbon calculator. It estimate your
                 carbon footprint and compare against the nation average, and only takes 5 minutes!
             </p>
             <button id="trigger-modal" class="w3-btn custom-light-green signup-button" onclick="openModal()">
@@ -88,14 +88,13 @@
     <div class="lower-section">
         <div class="card clickable" style="margin-left: 100px; margin-right: 100px; width: 700px;">
             <h1>
-                Who we are >
+                Our Mission >
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
-                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique. Aliquam finibus ex vitae dui
-                facilisis, eu vestibulum dolor consequat. Nam ut ex vitae urna ultrices congue sit amet at nulla. Donec
-                nisi enim, volutpat vulputate luctus eu, semper quis quam. Nulla facilisi. Curabitur cursus erat vel
-                felis hendrerit ullamcorper. Nam sed pretium nisl.
+                Due to the uprising carbon footprint in the atmosphere, many of us have no idea how much we are
+                contributing to the deteriorating environment. Our Mission is to provide an easy to use carbon
+                calculator for everyone so that we all have an idea of how much harm we as individuals are doing to the
+                environment, and suggest tools to help offset your footprint!
             </p>
         </div>
         <div class="card clickable" style="width: 350px;">
@@ -103,9 +102,8 @@
                 The Land >
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
-                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique.
-                facilisis.
+                Want to know how increasing global temperatures cause uncontrollable wildfires and record-breaking
+                droughts? Click here to learn more.
             </p>
         </div>
         <div class="card clickable" style="margin-right: 100px; width: 350px;">
@@ -113,9 +111,8 @@
                 The Ocean >
             </h1>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed risus magna, vulputate in vestibulum eu,
-                aliquam a massa. Pellentesque pharetra sit amet ante quis tristique.
-                facilisis.
+                How is our ocean doing? Click here to learn more about the dying coral reefs and hurricanes caused by
+                imbalanced sea temperatures.
             </p>
         </div>
     </div>
@@ -123,7 +120,7 @@
     <!------------------------------------------------ The Footer ------------------------------------------------>
     <footer class="bottom-nav-bar assigned-color">
         <div>
-            <a  class="hoverable clickable">
+            <a class="hoverable clickable">
                 Contact us
             </a>
             <a class="hoverable clickable">
@@ -153,32 +150,35 @@
                     Please Enter your deails
                 </h2>
             </div>
-            <form>
-                <br>
-                <div id="userDetails">
-                    <label>Given name:</label><br>
-                    <input type="text" id="fName"><br>
-                    <label>Surname:</label><br>
-                    <input type="text" id="lName"><br>
-                    <label>Username:</label><br>
-                    <input type="text" id="uName"><br>
-                    <label>Password:</label><br>
-                    <input type="text" id="password"><br><br>
-                </div>
+            <div id='ct-form'>
+                <form>
+                    <br>
+                    <div id="userDetails">
+                        <label>Given name:</label><br>
+                        <input type="text" id="fName"><br>
+                        <label>Surname:</label><br>
+                        <input type="text" id="lName"><br>
+                        <label>Username:</label><br>
+                        <input type="text" id="uName"><br>
+                        <label>Password:</label><br>
+                        <input type="text" id="password"><br><br>
+                    </div>
 
-                <div id="address">
-                    <label>Home Address:</label><br>
-                    <input type="text" id="hAddress"><br>
-                    <label>Work Address:</label><br>
-                    <input type="text" id="wAddress"><br><br>
-                </div>
-                <div id="contacts">
-                    <label>Mobile Number:</label><br>
-                    <input type="tel" id="phone"><br>
-                    <label>Email:</label><br>
-                    <input type="text" id="email"><br><br>
-                </div>
-            </form>
+                    <div id="address">
+                        <label>Home Address:</label><br>
+                        <input type="text" id="hAddress"><br>
+                        <label>Work Address:</label><br>
+                        <input type="text" id="wAddress"><br><br>
+                    </div>
+                    <div id="contacts">
+                        <label>Mobile Number:</label><br>
+                        <input type="tel" id="phone"><br>
+                        <label>Email:</label><br>
+                        <input type="text" id="email"><br><br>
+                    </div>
+                </form>
+            </div>
+
 
 
             <button class="w3-btn custom-light-green w3-padding-large" onclick="closeModal()">Submit</button>
